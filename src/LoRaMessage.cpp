@@ -12,9 +12,9 @@ LoRaMessage::~LoRaMessage()
   free(buffer);
 }
 
-LoRaMessage& LoRaMessage::addUint8(uint16_t value)
+LoRaMessage& LoRaMessage::addUint8(uint8_t value)
 {
-  reallocBuffer(1).writeUint16(value);
+  reallocBuffer(1).writeUint8(value);
   return *this;
 }
 

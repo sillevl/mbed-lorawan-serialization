@@ -9,7 +9,7 @@ class LoRaMessage
     LoRaMessage();
     ~LoRaMessage();
 
-    LoRaMessage& addUint8(uint16_t value);
+    LoRaMessage& addUint8(uint8_t value);
     LoRaMessage& addUint16(uint16_t value);
 
     LoRaEncoder reallocBuffer(int delta);
